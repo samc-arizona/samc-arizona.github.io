@@ -5,6 +5,38 @@
     <title>Portfolio</title>
     <link href="./main.css" rel="stylesheet"/>
     <style>
+      .wrap{
+          position: relative;
+          overflow: auto;
+          
+      }
+      .clickbox {
+          display: flex;
+          position: absolute;
+          cursor: pointer;
+          z-index: 99;
+          /* background: yellow; */
+          /* opacity: 0.5; */
+          opacity: 1;
+          width: 5%;
+          height: 5%;
+          padding: auto;
+          justify-content: center;
+          /* align-items: center; */
+      }
+      .clickbox span {
+          opacity: 0;
+          position: absolute;
+          top: calc(100% + 1vh);
+          color: black;
+          background: white;
+          border: 2px solid black;
+          border-radius: 5px;
+          text-align: center;
+      }
+      .clickbox:hover span {
+          opacity: 1;
+      }
       #map {
           width: 60vw;
           height: 30vh;
@@ -14,6 +46,33 @@
       .inner {
           width: 60vw;
           
+      }
+      #ow {
+          top: 7%;
+          left: 2%;
+          width: 28%;
+          height: 28%;
+      }
+      #slo {
+          top: 50%;
+          left: 8%;
+          width: 28%;
+          height: 31%;
+          
+      }
+      #artifact {
+          top: 6%;
+          left: 68%;
+          width: 29%;
+          height: 26%;
+          
+      }
+      #assessment {
+          top: 47%;
+          left: 73%;
+          width: 20%;
+          height: 40%;
+            
       }
       </style>
       
@@ -36,9 +95,15 @@
         class, where it started, how it has changed, and where it has ended up.
         </p>
       </div>
-      <!-- <div id="map" class="map inner"> -->
-      <!--   Pretend there is picture of a map here -->
-      <!-- </div> -->
+      <div class="map inner">
+        <div class="wrap">
+        <img src="imgs/main-map.jpg"/>
+        <a href="ow.html" class="clickbox" id="ow"><span>Opening Writes</span></a>
+        <a href="slo.html" class="clickbox" id="slo"><span>Student Learning Outcomes</span></a>
+        <a href="artifacts.html" class="clickbox" id="artifact"><span>Artifacts</span></a>
+        <a href="assesment.html" class="clickbox" id="assessment"><span>Self Assessment</span></a>
+        </div>
+      </div>
       <div class="inner">
         Sitemap:
         <ol>
