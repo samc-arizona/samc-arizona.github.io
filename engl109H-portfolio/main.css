@@ -70,8 +70,17 @@ body {
 }
 
 .yap {
+    align-content: center;
     text-align: justify;
     min-width: 50%;
+}
+
+figure {
+    text-align: center;
+}
+figure img {
+    width: 90%;
+
 }
 
 .proof { /* class for the artifact section of an slo */
