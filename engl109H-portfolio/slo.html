@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>Portfolio</title>
+    <link href="./main.css" rel="stylesheet"/>
+    <style>
+      .inner {
+          width: 75vw;
+      }
+      .wrap {
+          position: relative;
+          overflow: auto;
+      }
+      .clickbox {
+          display: flex;
+          position: absolute;
+          cursor: pointer;
+          z-index: 99;
+          /* background: yellow; */
+          /* opacity: 0.5; */
+          opacity: 1;
+          width: 5%;
+          height: 5%;
+          padding: auto;
+          justify-content: center;
+          /* align-items: center; */
+      }
+      .clickbox span {
+          opacity: 0;
+          position: absolute;
+          top: calc(100% + 1vh);
+          color: black;
+          background: white;
+          border: 2px solid black;
+          border-radius: 5px;
+          text-align: center;
+      }
+      .clickbox:hover span {
+          opacity: 1;
+      }
+      #slo1 {
+          width: 40%;
+          height: 31%;
+          top: 4%;
+          left: 0%;
+      }
+      #slo2 {
+          width: 25%;
+          height: 46%;
+          top: 47%;
+          left: 20%;
+          
+      }
+      #slo3 {
+          width: 18%;
+          height: 25%;
+          top: 4%;
+          left: 42%;
+      }
+      #slo3 span {
+          /* top: calc(100% + 4vh); */
+          /* width: 23em; */
+          
+      }
+      #slo4 {
+          width: 26%;
+          height: 22%;
+          top: 53%;
+          left: 59%;
+      }
+      #slo5 {
+          width: 6%;
+          height: 13%;
+          top: 3%;
+          left: 90%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <a href="index.html">Home</a>
+      <a href="ow.html">Opening Writes</a>
+      <a href="slo.html">Student Learning Outcomes</a>
+      <a href="artifacts.html">Artifacts</a>
+      <a href="assesment.html">Self Assesment</a>
+    </div>
+    <!-- <div class="outerbox"> -->
+    <div class="container">
+        <div class="map inner">
+          <div style="display:flex; justify-content:center">Map of the Student Learning Outcomes</div>
+          <div class="wrap">
+          <img usemap="#slomap" src="imgs/slo-map.jpg"/>
+          <a class="clickbox" id="slo1" href="slo1.html"><span>Rhetorical Situation</span></a>
+          <a class="clickbox" id="slo2" href="slo2.html"><span>Research and Evidence</span></a>
+          <a class="clickbox" id="slo3" href="slo3.html"><span>Genre Conventions and Language Mechanics</span></a>
+          <a class="clickbox" id="slo4" href="slo4.html"><span>Revision and Peer Review</span></a>
+          <a class="clickbox" id="slo5" href="slo5.html"><span>Reflection</span></a>
+          </div>
+        </div>
+        <div class="inner">
+          Student Learning Outcomes
+          <ol>
+            <li>
+              <a href="slo1.html">Rhetorical Situation</a>
+            <li>
+              <a href="slo2.html">Research and Evidence</a>
+            <li>
+              <a href="slo3.html">Genre Conventions and Language Mechanics</a>
+            <li>
+              <a href="slo4.html">Revision and Peer Review</a>
+            <li>
+              <a href="slo5.html">Reflection</a>
+          </ol>
+        </div>
+      <!-- <div class="column inner"> -->
+      <!-- </div> -->
+      <!-- <div class="column inner"> -->
+      <!-- </div> -->
+   </div>
+   <!-- </div> -->
+  </body>
+</html>

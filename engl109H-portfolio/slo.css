@@ -1,0 +1,12 @@
+.container {
+    flex-direction: row;
+}
+
+h1 {
+    margin: 1vh;
+
+}
+
+.inner {
+    margin: 1vw 0.5vw 0;
+}
